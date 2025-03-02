@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Roboto Flex", sans-serif;
+    color: aliceblue;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.bloco_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 60%;
+    background-image: url(575098805408.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.caixa1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.bloco_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 40%;
+    background-color: #0d1017;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+
+.formulario input {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 150px;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #1e1e1e;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2d2d2d;
+}
+
+button .material-symbols-outlined {
+    transition: margin-left 0.3s ease-in-out;
+}
+
+button:hover .material-symbols-outlined {
+    margin-left: 10px;
+}
+
+.firstPage {
+    display: none;
+}
