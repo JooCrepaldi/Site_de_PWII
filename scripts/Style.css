@@ -4,20 +4,21 @@
     border: none;
     outline: none;
     font-family: "Roboto Flex", sans-serif;
-    color: aliceblue;
 }
 
 body{
     display: flex;
     flex-direction: column;
 }
-
+/*Página de login*/
 .loginPage {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
+    color: aliceblue;
 }
 
 
@@ -41,7 +42,7 @@ body{
     padding: 20px;
 }
 
-#logo {
+#logo_Login {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -72,9 +73,10 @@ body{
     margin-top: 5px;
     background-color: transparent;
     border-bottom: 1px solid white;
+    color: aliceblue;
 }
 
-button {
+#botaoLogin {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,20 +89,117 @@ button {
     border-radius: 50px;
     background-color: #1e1e1e;
     cursor: pointer;
+    color: aliceblue;
 }
 
-button:hover{
+#botaoLogin:hover{
     background-color: #2d2d2d;
 }
 
-button .material-symbols-outlined {
+#botaoLogin .material-symbols-outlined {
     transition: margin-left 0.3s ease-in-out;
 }
 
-button:hover .material-symbols-outlined {
+#botaoLogin:hover .material-symbols-outlined {
     margin-left: 10px;
 }
 
 .firstPage {
     display: none;
+}
+/*Página 1*/
+nav{
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    position: fixed;
+}
+
+.alinha{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.paginas{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#logoPage{
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+#navLink{
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+main{
+    background-color:cornflowerblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 500px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#titulo{
+    font-size: 96px;
+
+    margin-bottom: 30px;
+}
+#sutitulo{
+    font-size: 30px;
+}
+#botaoAcessar{
+    margin-top: 30px;
+
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+article{
+    background-color: darkkhaki;
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 30px;
+    margin-right: 30px;
+
+    padding: 20px;
+    gap: 50px;
+}
+
+footer{
+    background-color: coral;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    padding: 20px;
+    height: 150px;
 }
