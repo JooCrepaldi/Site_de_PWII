@@ -20,4 +20,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     document.querySelector(".loginPage").style.display = "flex";
-});
+});//rever o código
