@@ -6,10 +6,21 @@
     font-family: "Roboto Flex", sans-serif;
 }
 
-body{
+:root {
+    --corFundo: #F5F7FA;
+    --corPrimaria: #007BFF;
+    --corSecundaria: #00C4B4;
+    --corTexto: #333333;
+    --corPrimariaHover: #0056b3;
+    --corSecundariaHover: #009d8f;
+}
+
+body {
     display: flex;
     flex-direction: column;
+    background-color: var(--corFundo);
 }
+
 /*Página de login*/
 .loginPage {
     display: flex;
@@ -18,7 +29,7 @@ body{
     align-items: center;
     min-height: 100vh;
 
-    color: aliceblue;
+    color: var(--corTexto);
 }
 
 
@@ -55,7 +66,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     width: 40%;
-    background-color: #0d1017;
+    background-color:var(--corFundo);
 }
 
 .formulario {
@@ -72,8 +83,8 @@ body{
     padding: 10px;
     margin-top: 5px;
     background-color: transparent;
-    border-bottom: 1px solid white;
-    color: aliceblue;
+    border-bottom: 1px solid var(--corTexto);
+    color: var(--corTexto);
 }
 
 #botaoLogin {
@@ -87,13 +98,13 @@ body{
     margin-top: 40px;
     padding: 15px;
     border-radius: 50px;
-    background-color: #1e1e1e;
+    background-color: var(--corPrimaria);
     cursor: pointer;
     color: aliceblue;
 }
 
-#botaoLogin:hover{
-    background-color: #2d2d2d;
+#botaoLogin:hover {
+    background-color:var(--corPrimariaHover);
 }
 
 #botaoLogin .material-symbols-outlined {
@@ -107,9 +118,10 @@ body{
 #home {
     display: none;
 }
+
 /*Página 1*/
-nav{
-    background-color: aqua;
+nav {
+    background-color: var(--corPrimaria);
 
     display: flex;
     flex-direction: row;
@@ -126,71 +138,88 @@ nav{
     position: fixed;
 }
 
-.alinha{
+.alinha {
     display: flex;
     justify-content: center;
 
     margin-top: 10px;
 }
 
-.paginas{
+.paginas {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-#homeButton{
-    padding: 5px;
+#homeButton {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 50px;
     cursor: pointer;
-}
-#homeButton:hover{
-    background-color: rgb(0, 197, 197);
+    color: var(--corFundo);
 }
 
-#solucoesButton{
-    padding: 5px;
+#homeButton:hover {
+    background-color: var(--corPrimariaHover);
+}
+
+#solucoesButton {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 50px;
     cursor: pointer;
-}
-#solucoesButton:hover{
-    background-color: rgb(0, 197, 197);
+    color: var(--corFundo);
 }
 
-#sobrenosButton{
-    padding: 5px;
+#solucoesButton:hover {
+    background-color:var(--corPrimariaHover);
+}
+
+#sobrenosButton {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 50px;
     cursor: pointer;
-}
-#sobrenosButton:hover{
-    background-color: rgb(0, 197, 197);
+    color: var(--corFundo);
 }
 
-#logoPage{
+#sobrenosButton:hover {
+    background-color: var(--corPrimariaHover);
+}
+
+#logoPage {
     margin-left: 5px;
     flex-grow: 1;
     margin-top: 5px;
 }
 
-#navLink{
+#navLink {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px;
-    border: 2px solid black;
+    border: 2px solid var(--corFundo);
+    text-decoration: none;
     border-radius: 50px;
     margin-left: 20px;
     width: 130px;
     height: 20px;
+    color: var(--corFundo);
 }
 
-#navLink:hover{
-background-color:rgb(0, 213, 213);
+#navLink:hover {
+    background-color: var(--corPrimariaHover);
 }
 
-main{
-    background-color:cornflowerblue;
+main {
 
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,15 +232,17 @@ main{
     padding-bottom: 20px;
 }
 
-#titulo{
+#titulo {
     font-size: 96px;
 
     margin-bottom: 30px;
 }
-#sutitulo{
+
+#sutitulo {
     font-size: 30px;
 }
-#botaoAcessar{
+
+#botaoAcessar {
     margin-top: 30px;
 
     height: 50px;
@@ -221,15 +252,16 @@ main{
 
     cursor: pointer;
 }
-#botaoAcessar:hover{
+
+#botaoAcessar:hover {
     background-color: rgb(221, 221, 221);
 }
 
-article{
+article {
     background-color: darkkhaki;
     display: flex;
     flex-direction: row;
-    
+
     margin-left: 30px;
     margin-right: 30px;
 
@@ -237,7 +269,7 @@ article{
     gap: 50px;
 }
 
-.section1{
+.section1 {
     background-color: khaki;
 
     display: flex;
@@ -252,10 +284,10 @@ article{
     padding-left: 200px;
     padding-right: 200px;
     height: 350px;
-    
+
 }
 
-.section2{
+.section2 {
     background-color: crimson;
 
     margin-left: 30px;
@@ -265,7 +297,7 @@ article{
     height: 350px;
 }
 
-footer{
+footer {
     background-color: coral;
 
     margin-left: 30px;
@@ -276,6 +308,6 @@ footer{
 }
 
 /*Sobre nós*/
-.sobreNos{
+.sobreNos {
     display: none;
 }
