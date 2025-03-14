@@ -40,8 +40,7 @@ body {
     align-items: center;
     min-height: 100vh;
     width: 60%;
-    background-image: url(575098805408.jpg);
-    background-size: cover;
+    background-image: url(abstract-geometric-wavy-folds-background.jpg);
     background-position: center;
 }
 
@@ -51,6 +50,8 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
+
+    color: var(--corFundo);
 }
 
 #logo_Login {
@@ -66,7 +67,10 @@ body {
     justify-content: center;
     min-height: 100vh;
     width: 40%;
-    background-color:var(--corFundo);
+    background-color: var(--corFundo);
+}
+.bloco_2 h1{
+    color: var(--corSecundariaHover);
 }
 
 .formulario {
@@ -104,7 +108,7 @@ body {
 }
 
 #botaoLogin:hover {
-    background-color:var(--corPrimariaHover);
+    background-color: var(--corPrimariaHover);
 }
 
 #botaoLogin .material-symbols-outlined {
@@ -123,6 +127,8 @@ body {
 nav {
     background-color: var(--corPrimaria);
 
+    border: #f5f7fa54 solid 2px;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -131,6 +137,8 @@ nav {
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
+
+    z-index: 1000;
 
     height: 60px;
     width: 80%;
@@ -176,7 +184,7 @@ nav {
 }
 
 #solucoesButton:hover {
-    background-color:var(--corPrimariaHover);
+    background-color: var(--corPrimariaHover);
 }
 
 #sobrenosButton {
@@ -214,22 +222,25 @@ nav {
 }
 
 #navLink:hover {
-    background-color: var(--corPrimariaHover);
+    background-color: var(--corSecundariaHover);
 }
 
 main {
 
-    
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 
     height: 500px;
 
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 80px;
     padding-bottom: 20px;
+}
+
+main section {
+    margin-right: 100px;
+    margin-top: 50px;
 }
 
 #titulo {
@@ -243,6 +254,8 @@ main {
 }
 
 #botaoAcessar {
+    background-color: var(--corSecundaria);
+
     margin-top: 30px;
 
     height: 50px;
@@ -254,23 +267,41 @@ main {
 }
 
 #botaoAcessar:hover {
-    background-color: rgb(221, 221, 221);
+    background-color: var(--corSecundariaHover);
 }
 
 article {
-    background-color: darkkhaki;
     display: flex;
     flex-direction: row;
-
     margin-left: 30px;
     margin-right: 30px;
+    gap: 20px;
 
-    padding: 20px;
-    gap: 50px;
+    margin-bottom: 50px;
+}
+article div {
+    background-color: var(--corSecundaria);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    border-radius: 25px;
+}
+article div p {
+    font-style: italic;
+}
+article .tituloArticle {
+    font-size: 50px;
+}
+article:hover{
+
 }
 
 .section1 {
-    background-color: khaki;
+    background-color: var(--corPrimaria);
+    color: var(--corFundo);
+    font-size: 150%;
 
     display: flex;
     justify-content: center;
@@ -281,14 +312,21 @@ article {
     margin-left: 30px;
     margin-right: 30px;
 
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
     height: 350px;
 
+    margin-bottom: 50px;
+
+    border-radius: 25px;
 }
 
 .section2 {
-    background-color: crimson;
+    background-color: var(--corPrimaria);
+
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
 
     margin-left: 30px;
     margin-right: 30px;
@@ -298,23 +336,45 @@ article {
 }
 
 footer {
-    background-color: coral;
+    background-color:#00000015;
 
-    display:flex;
+    display: flex;
     flex-direction: row;
+
+    gap: 50px;
 
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 
-    padding: 20px;
+    padding: 50px;
 }
 
-footer div:nth-child(1){
+footer div {
     display: flex;
     flex-direction: column;
 }
 
+footer div p:nth-child(1){
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
 /*Sobre nós*/
-.sobreNos {
+#sobreNos {
     display: none;
+}
+
+#sobreNos section{
+    background-color: var(--corSecundaria);
+    color: var(--corTexto);
+    margin-top: 80px;
+}
+
+/*soluções*/
+
+#solucoes article{
+    margin-top: 80px;
 }
